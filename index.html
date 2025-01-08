@@ -240,15 +240,7 @@
             maxZoom: 19,
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
-        let markers = [
-    [10.452479569377356, 106.4577146883188],   // A
-    [10.452463083754301, 106.45741830421453],  // B
-    [10.452765620482419, 106.45740832033027],  // C
-    [10.453005685318518, 106.45740808497004],  // D
-    [10.45355178012142, 106.4577759090944]     // E
-];
 
-let polyline = L.polyline(markers, { color: 'red' }).addTo(map);
         // Lựa chọn chế độ        
         document.getElementById('modeSelector').onchange = function() {
             mode = this.value;
