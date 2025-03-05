@@ -192,9 +192,6 @@
         </div>
         <div id="map"></div>
     </div>
-    <footer>
-        Được thiết kế bởi <a href="#">Keep The Blue Flag Fly High</a> | 2024
-    </footer>
     <script>
         const client = mqtt.connect("wss://44038dfdeba540f7b213bfb111dc569e.s1.eu.hivemq.cloud:8884/mqtt", {
             username: "hivemq.webclient.1736155438349",
@@ -237,7 +234,7 @@
         });
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 14,
+            maxZoom: 16,
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
